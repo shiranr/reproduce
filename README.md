@@ -1,7 +1,6 @@
 # reproduce
-reproduce
- 
- Two issues when upgrading from mongo GORM plugin version: 3.0.2 to Mongo gorm plugin version: 5.0.2. <br>
+
+reproduce Two issues when upgrading from mongo GORM plugin version: 3.0.2 to Mongo gorm plugin version: 5.0.2. <br>
  
  To see the exceptions, run Application.groovy and the code itself is in the test controller. <br>
  
