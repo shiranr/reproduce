@@ -14,7 +14,7 @@ class TestController {
         DB localDB = mongo.getDB('foo')
         localDB.dropDatabase()
         DBCollection collection = localDB.getCollection('user')
-        collection.insert(new BasicDBObject('name', 'bla2').append('_id',new ObjectId().toString()).append('version', 0).append('profiles', [] as Set))
+        collection.insert(new BasicDBObject('name', 'bla2').append('_id',new ObjectId().toString()).append('version', 0L))
         User.findAll()
         render(view: 'index')
     }
@@ -25,7 +25,7 @@ class TestController {
         DB localDB = mongo.getDB('foo')
         localDB.dropDatabase()
         DBCollection collection = localDB.getCollection('user')
-        collection.insert(new BasicDBObject('name', 'bla2').append('_id',new ObjectId().toString()).append('profiles', [Profile.DEVELOP.toString()] as Set))
+        collection.insert(new BasicDBObject('name', 'bla2').append('_id',new ObjectId().toString()).append('profiles', [] as Set))
         User.findAll()
         render(view: 'index')
     }
