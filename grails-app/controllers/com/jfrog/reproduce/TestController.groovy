@@ -20,7 +20,7 @@ class TestController {
     }
 
 
-    def listToSetBug() {
+    def setBug() {
         Mongo mongo = new Mongo("127.0.0.1", 27017)
         DB localDB = mongo.getDB('foo')
         localDB.dropDatabase()
@@ -31,7 +31,7 @@ class TestController {
     }
 
 
-    def listToSetOldBug() {
+    def anotherSetBug() {
         Mongo mongo = new Mongo("127.0.0.1", 27017)
         DB localDB = mongo.getDB('foo')
         localDB.dropDatabase()

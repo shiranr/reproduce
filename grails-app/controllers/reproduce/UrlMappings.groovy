@@ -11,8 +11,8 @@ class UrlMappings {
 
         "/versionBug"(controller: "test", action: 'versionBug')
         "/idBug"(controller: "test", action: 'idBug')
-        "/listToSetBug"(controller: "test", action: 'listToSetBug')
-        "/listToSetOldBug"(controller: "test", action: 'listToSetOldBug')
+        "/setBug"(controller: "test", action: 'setBug')
+        "/anotherSetBug"(controller: "test", action: 'anotherSetBug')
         "500"(view:'/error')
         "404"(view:'/notFound')
     }

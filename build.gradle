@@ -64,7 +64,7 @@ dependencies {
 
     compile('org.grails.plugins:mongodb:5.0.3')
 
-    compile "org.mongodb:mongo-java-driver:3.0.2"
+    compile "org.mongodb:mongo-java-driver:3.2.2"
 }
 
 task wrapper(type: Wrapper) {
