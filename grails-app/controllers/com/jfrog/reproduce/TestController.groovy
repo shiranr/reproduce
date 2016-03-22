@@ -29,4 +29,16 @@ class TestController {
         User.findAll()
         render(view: 'index')
     }
+
+
+    def listToSetOldBug() {
+        Mongo mongo = new Mongo("127.0.0.1", 27017)
+        DB localDB = mongo.getDB('foo')
+        localDB.dropDatabase()
+        User user = new User(name: 'name', profiles: [Profile.DEVELOP] as Set, profilesEnum: [] as Set)
+        user.save(flush: true, failOnError: true)
+        User.findAll()
+        render(view: 'index')
+    }
+
 }
